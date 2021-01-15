@@ -13,13 +13,14 @@ Any programming language that you prefer, however, the sample code in this repos
 * [Tutorial](https://ww2.mathworks.cn/support/learn-with-matlab-tutorials.html)
 * [Examples](https://ww2.mathworks.cn/help/examples.html)
 
+**We use use Matlab a lot in the future labs and assignments! Please learn to use Matlab.**
 
 ### Prepare your repository
 * Each student will need to create a GitHub account and clone this repository [simpleEA](https://github.com/SUSTech-EC2020/simpleEA.git). If you use other programming language, there is no need to clone the repository, you can create a new one.
 * The url of the cloned repository should be sent to me via Blackboard.
 
 ## Minimising a simple objective function in discrete domain
-You will work on minimising a simple quadratic function in discrete domain using a simple EA. You have seen this function in Lecture 1, defined as *x^2*, with *x* in the integer interval [0,31], i.e., x=0,1,...,30,31.
+You will work on minimising a simple quadratic function in discrete domain using a simple EA. You have seen this function in Lecture 1 (slides 15--22), defined as *x^2*, with *x* in the integer interval [0,31], i.e., x=0,1,...,30,31.
 
 This simple objective function is implemented in this repository and it is named as *objFunc*, shown as follows:
 ```matlab
@@ -32,7 +33,7 @@ end
 
 ## Implement a simple EA
 **Exercise:** Implement the simple EA introduced in the illustrative example of Lecture 1.
-Please refer to the slides entitled *How Does a Simple EA Work* for more details.
+Please refer to the slides entitled *How Does a Simple EA Work* (slides 15--22) for more details.
 
 **Structure of this simple EA:** Highlights are given below:
 * Binary representation of individuals.
@@ -60,7 +61,11 @@ Now please test your EA on the given objective function by varying the populatio
 
 ## Visualise the results
 Please the figures described as follows for all the parameter combinations.
-* **Figure 1** *x-axis:* current evaluation number. *y-axis:* best-so-far fitness value.
-* **Figure 2** *x-axis:* current evaluation number. *y-axis:* fitness value of the best individual of current population.
-* **Figure 3** *x-axis:* log(current evaluation number). *y-axis:* best-so-far fitness value.
-* **Figure 4** *x-axis:* log(current evaluation number). *y-axis:* fitness value of the best individual of current population.
+* **Figure 1** *x-axis:* current fitness evaluation number. *y-axis:* best-so-far fitness value.
+* **Figure 2** *x-axis:* current fitness evaluation number. *y-axis:* fitness value of the best individual of current population.
+* **Figure 3** *x-axis:* log(current fitness evaluation number). *y-axis:* best-so-far fitness value.
+* **Figure 4** *x-axis:* log(current fitness evaluation number). *y-axis:* fitness value of the best individual of current population.
+
+**Question:** What is a "generation number" and a "fitness evaluation number"?
+
+**Question:** Are the "fitness function" and the "objective function" the same?
